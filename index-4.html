@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17302B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3Ac2pa%3D%22http%3A//c2pa.org/manifest%22%3E%3Cmetadata%3E%3Cc2pa%3Amanifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo2MzNlYTQ3Yy1mODhkLTQ1ZjMtOGMyNS04NWQ1MjhhZmExYjAAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaET0lCrf9nPIsM8ICbpX50AAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxZWMzMzE5OS03ZDczLTRhZDAtYmVjNC02MzM0NTc3YmZjYzZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoUkPRAoxiisMusUJe/BNWMQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggwdssypBDVZwEe1nzrKCQDsowmNa0UwfXoOWXTvwmrqSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaIi2a6vu5tSCTIe%2BGC618%2BMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCiwt%2BnLB8C0fZeZuoRLHGX1DzfXIpgmVl0t0DvO8xP9WRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh9Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjYzM2VhNDdjLWY4OGQtNDVmMy04YzI1LTg1ZDUyOGFmYTFiMC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjdiMjcwMGQ3LWQ0MTEtNDA2ZC04NzUxLWY3ODM0NTI3ZDcwOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDB2yzKkENVnAR7WfOsoJAOyjCY1rRTB9eg5ZdO/CaupKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggy6YRJWGiuioPHvBP6XA7w5yzRKaEaRQj/jBHq/5EOgGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggQ8/U2F3X1EBVdHTHOu5fXyMw//x5CqSVMu9GEwGxnX90Y2xhaW1fZ2VuZXJhdG9yX2luZm%2BjZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj%2BOPEz5o%2BnMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1%2BUCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9%2B1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQD3x0A3LeSgk/PKJL5yN204%2BIzZS4p3zDn/FIRogTWQSQF0qBKoJEV7hBYrL72Bm1NA3ALstD8cFhhJPExfpuLw%3D%3C/c2pa%3Amanifest%3E%3C/metadata%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22%2317302B%22/%3E%3Crect%20x%3D%22112%22%20y%3D%22136%22%20width%3D%22288%22%20height%3D%22264%22%20rx%3D%2232%22%20fill%3D%22%23F1F4F2%22/%3E%3Crect%20x%3D%22112%22%20y%3D%22136%22%20width%3D%22288%22%20height%3D%2268%22%20rx%3D%2232%22%20fill%3D%22%2334D3B4%22/%3E%3Ccircle%20cx%3D%22196%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%2317302B%22/%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%2317302B%22/%3E%3Ccircle%20cx%3D%22316%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%23B4234A%22/%3E%3C/svg%3E">
+<script>
+(function(){var m={name:"Harcama Defteri",short_name:"Harcamalar",start_url:location.href.split("#")[0],display:"standalone",background_color:"#F1F4F2",theme_color:"#17302B",icons:[{src:"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3Ac2pa%3D%22http%3A//c2pa.org/manifest%22%3E%3Cmetadata%3E%3Cc2pa%3Amanifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo2MzNlYTQ3Yy1mODhkLTQ1ZjMtOGMyNS04NWQ1MjhhZmExYjAAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaET0lCrf9nPIsM8ICbpX50AAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxZWMzMzE5OS03ZDczLTRhZDAtYmVjNC02MzM0NTc3YmZjYzZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoUkPRAoxiisMusUJe/BNWMQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggwdssypBDVZwEe1nzrKCQDsowmNa0UwfXoOWXTvwmrqSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaIi2a6vu5tSCTIe%2BGC618%2BMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCiwt%2BnLB8C0fZeZuoRLHGX1DzfXIpgmVl0t0DvO8xP9WRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh9Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjYzM2VhNDdjLWY4OGQtNDVmMy04YzI1LTg1ZDUyOGFmYTFiMC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjdiMjcwMGQ3LWQ0MTEtNDA2ZC04NzUxLWY3ODM0NTI3ZDcwOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDB2yzKkENVnAR7WfOsoJAOyjCY1rRTB9eg5ZdO/CaupKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggy6YRJWGiuioPHvBP6XA7w5yzRKaEaRQj/jBHq/5EOgGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggQ8/U2F3X1EBVdHTHOu5fXyMw//x5CqSVMu9GEwGxnX90Y2xhaW1fZ2VuZXJhdG9yX2luZm%2BjZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj%2BOPEz5o%2BnMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1%2BUCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9%2B1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQD3x0A3LeSgk/PKJL5yN204%2BIzZS4p3zDn/FIRogTWQSQF0qBKoJEV7hBYrL72Bm1NA3ALstD8cFhhJPExfpuLw%3D%3C/c2pa%3Amanifest%3E%3C/metadata%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22%2317302B%22/%3E%3Crect%20x%3D%22112%22%20y%3D%22136%22%20width%3D%22288%22%20height%3D%22264%22%20rx%3D%2232%22%20fill%3D%22%23F1F4F2%22/%3E%3Crect%20x%3D%22112%22%20y%3D%22136%22%20width%3D%22288%22%20height%3D%2268%22%20rx%3D%2232%22%20fill%3D%22%2334D3B4%22/%3E%3Ccircle%20cx%3D%22196%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%2317302B%22/%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%2317302B%22/%3E%3Ccircle%20cx%3D%22316%22%20cy%3D%22296%22%20r%3D%2222%22%20fill%3D%22%23B4234A%22/%3E%3C/svg%3E",sizes:"any",type:"image/svg+xml"}]};
+var l=document.createElement("link");l.rel="manifest";l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:"application/manifest+json"}));document.head.appendChild(l);})();
+</script>
+<title>Harcama Defteri</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<style>
+:root{--bg:#F1F4F2;--card:#fff;--ink:#17302B;--mute:#6B7F79;--line:#DCE4E0;--inc:#0F766E;--exp:#B4234A;--acc:#17302B;--on:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#0F1A17;--card:#172622;--ink:#E8F0ED;--mute:#8FA39C;--line:#27403A;--inc:#34D3B4;--exp:#FF7A99;--acc:#34D3B4;--on:#0F1A17}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next","Segoe UI",system-ui,sans-serif}
+body{padding:env(safe-area-inset-top) 0 calc(96px + env(safe-area-inset-bottom))}
+main{max-width:520px;margin:0 auto;padding:12px 14px}
+button{font:inherit;color:inherit;cursor:pointer}
+.top{display:flex;align-items:center;justify-content:space-between;margin:4px 0 12px}
+.top h1{font-size:22px;margin:0;font-weight:700;letter-spacing:-.01em}
+.nav{display:flex;align-items:center;gap:6px}
+.nav button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:18px}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.net{grid-column:1/-1;background:var(--acc);color:var(--on);border-radius:18px;padding:16px 18px}
+.net small{opacity:.75;font-size:13px}.net b{display:block;font-size:34px;letter-spacing:-.02em;margin-top:2px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.box small{color:var(--mute);font-size:13px}.box b{display:block;font-size:20px;margin-top:2px}
+.inc{color:var(--inc)}.exp{color:var(--exp)}
+.cal{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 8px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dow{font-size:12px;color:var(--mute);text-align:center;padding:4px 0}
+.day{aspect-ratio:1/1.12;border:0;border-radius:10px;background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:5px 0 0;font-size:14px}
+.day:disabled{cursor:default}
+.day.today{outline:2px solid var(--acc);outline-offset:-2px}
+.day.has{background:color-mix(in srgb,var(--line) 55%,transparent)}
+.day i{font-style:normal;font-size:10px;margin-top:3px;font-weight:600;max-width:100%;overflow:hidden;white-space:nowrap}
+h2{font-size:16px;margin:20px 2px 8px}
+.cat{display:flex;align-items:center;gap:10px;margin:8px 2px;font-size:14px}
+.cat span:first-child{width:84px}.bar{flex:1;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.bar div{height:100%;background:var(--exp);border-radius:4px}.cat span:last-child{width:74px;text-align:right;font-variant-numeric:tabular-nums}
+.empty{color:var(--mute);font-size:14px;margin:6px 2px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));height:56px;padding:0 22px;border-radius:28px;border:0;background:var(--acc);color:var(--on);font-weight:700;font-size:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-end;justify-content:center;z-index:5}
+.sheet-bg.on{display:flex}
+.sheet{background:var(--card);width:100%;max-width:520px;max-height:88vh;overflow:auto;border-radius:22px 22px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+.sheet h3{margin:0 0 12px;font-size:18px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px}
+.seg button{padding:11px;border-radius:12px;border:1px solid var(--line);background:transparent;font-weight:600}
+.seg button.on{background:var(--acc);color:var(--on);border-color:var(--acc)}
+input,select{width:100%;font:inherit;font-size:16px;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin-bottom:10px}
+.save{width:100%;padding:14px;border:0;border-radius:14px;background:var(--acc);color:var(--on);font-weight:700;font-size:16px}
+.row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row small{display:block;color:var(--mute)}.row button{border:0;background:none;color:var(--mute);font-size:18px;padding:6px 10px}
+.auth{max-width:360px;margin:12vh auto 0;padding:0 18px}.auth h1{font-size:28px}
+.link{background:none;border:0;color:var(--mute);margin-top:12px;text-decoration:underline;width:100%}
+.msg{color:var(--exp);font-size:14px;min-height:20px}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<div class="sheet-bg" id="bg"><div class="sheet" id="sheet"></div></div>
+
+<script>
+/* ====== AYARLAR: Supabase panelinden kopyala (Project Settings > API) ====== */
+const SUPABASE_URL = "https://ywijekjeybbstknmufzz.supabase.co";
+const SUPABASE_KEY = "sb_publishable_iI_NCnvSE-86b9tjGuiwEw_bdkq52dV";
+const CUR = "m."; // Türkmen manatı
+/* ======================================================================== */
+
+const MONTHS=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+const CATS={expense:["Market","Yemek","Ulaşım","Fatura","Sağlık","Eğlence","Diğer"],income:["Maaş","Ek gelir","Diğer"]};
+let sb=null;try{sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY)}catch(e){}
+const $=s=>document.querySelector(s);
+const money=n=>(Math.round(n*100)/100).toLocaleString("tr-TR",{minimumFractionDigits:2,maximumFractionDigits:2})+" "+CUR;
+const short=n=>Math.abs(n)>=1000?(n/1000).toFixed(1).replace(".0","")+"k":String(Math.round(n));
+const pad=n=>String(n).padStart(2,"0");
+const ds=(y,m,d)=>`${y}-${pad(m+1)}-${pad(d)}`;
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let user=null,items=[],cur=new Date(new Date().getFullYear(),new Date().getMonth(),1),signup=false;
+
+async function init(){
+  if(!sb||SUPABASE_URL.startsWith("BURAYA")||SUPABASE_KEY.startsWith("BURAYA")){
+    $("#app").innerHTML='<div class="auth"><h1>Ayar eksik</h1><p>index.html içindeki SUPABASE_URL ve SUPABASE_KEY satırlarına Supabase bilgilerini yapıştır. Sayfa internete açıksa ve bu mesajı hâlâ görüyorsan Supabase kütüphanesi yüklenememiş olabilir.</p></div>';
+    return;
+  }
+  load();
+}
+
+function authView(msg=""){
+  $("#app").innerHTML=`<div class="auth"><h1>Harcama Defteri</h1>
+  <input id="em" type="email" placeholder="E-posta" autocomplete="email">
+  <input id="pw" type="password" placeholder="Şifre (en az 6 karakter)" autocomplete="current-password">
+  <div class="msg" id="msg">${esc(msg)}</div>
+  <button class="save" id="go">${signup?"Hesap oluştur":"Giriş yap"}</button>
+  <button class="link" id="sw">${signup?"Hesabım var, giriş yap":"Yeni hesap oluştur"}</button></div>`;
+  $("#sw").onclick=()=>{signup=!signup;authView()};
+  $("#go").onclick=async()=>{
+    const email=$("#em").value.trim(),password=$("#pw").value;
+    const r=signup?await sb.auth.signUp({email,password}):await sb.auth.signInWithPassword({email,password});
+    if(r.error)return $("#msg").textContent=r.error.message;
+    if(signup&&!r.data.session)return $("#msg").textContent="E-postana gelen bağlantıya tıkla, sonra giriş yap.";
+    user=r.data.session.user;load();
+  };
+}
+
+async function load(){
+  const y=cur.getFullYear(),m=cur.getMonth();
+  const next=new Date(y,m+1,1);
+  const {data,error}=await sb.from("transactions").select("*")
+    .gte("date",ds(y,m,1)).lt("date",ds(next.getFullYear(),next.getMonth(),1)).order("created_at");
+  if(error){alert("Veriler alınamadı: "+error.message);return}
+  items=data||[];render();
+}
+
+function render(){
+  const y=cur.getFullYear(),m=cur.getMonth();
+  const inc=items.filter(i=>i.type==="income").reduce((a,i)=>a+Number(i.amount),0);
+  const exp=items.filter(i=>i.type==="expense").reduce((a,i)=>a+Number(i.amount),0);
+  const byDay={};items.forEach(i=>{const d=+i.date.slice(8);byDay[d]=(byDay[d]||0)+(i.type==="income"?1:-1)*Number(i.amount)});
+  const first=(new Date(y,m,1).getDay()+6)%7,days=new Date(y,m+1,0).getDate();
+  const now=new Date(),isNow=now.getFullYear()===y&&now.getMonth()===m;
+  let cells=["Pt","Sa","Ça","Pe","Cu","Ct","Pz"].map(d=>`<div class="dow">${d}</div>`).join("")+"<div></div>".repeat(first);
+  for(let d=1;d<=days;d++){
+    const v=byDay[d];
+    cells+=`<button class="day${v!==undefined?" has":""}${isNow&&now.getDate()===d?" today":""}" data-d="${d}">${d}${v!==undefined?`<i class="${v>=0?"inc":"exp"}">${v>0?"+":""}${short(v)}</i>`:""}</button>`;
+  }
+  const cats={};items.filter(i=>i.type==="expense").forEach(i=>cats[i.category]=(cats[i.category]||0)+Number(i.amount));
+  const list=Object.entries(cats).sort((a,b)=>b[1]-a[1]);
+  const catHtml=list.length?list.map(([c,v])=>`<div class="cat"><span>${esc(c)}</span><div class="bar"><div style="width:${v/exp*100}%"></div></div><span>${money(v)}</span></div>`).join(""):`<p class="empty">Bu ay henüz harcama yok.</p>`;
+  $("#app").innerHTML=`
+  <div class="top"><h1>${MONTHS[m]} ${y}</h1><div class="nav"><button id="pv" aria-label="Önceki ay">‹</button><button id="nx" aria-label="Sonraki ay">›</button></div></div>
+  <div class="sum"><div class="net"><small>Ay sonu bakiyesi</small><b>${money(inc-exp)}</b></div>
+  <div class="box"><small>Kazanç</small><b class="inc">${money(inc)}</b></div>
+  <div class="box"><small>Harcama</small><b class="exp">${money(exp)}</b></div></div>
+  <div class="cal"><div class="grid">${cells}</div></div>
+  <h2>Harcamalar kategoriye göre</h2>${catHtml}
+  <button class="fab" id="add">+ Ekle</button>`;
+  $("#pv").onclick=()=>{cur=new Date(y,m-1,1);load()};
+  $("#nx").onclick=()=>{cur=new Date(y,m+1,1);load()};
+  $("#add").onclick=()=>openSheet(isNow?ds(y,m,now.getDate()):ds(y,m,1));
+  document.querySelectorAll(".day").forEach(b=>b.onclick=()=>openSheet(ds(y,m,+b.dataset.d)));
+}
+
+function openSheet(date,type="expense"){
+  const dayItems=items.filter(i=>i.date===date);
+  const [y,mo,d]=date.split("-");
+  $("#sheet").innerHTML=`<h3>${+d} ${MONTHS[+mo-1]} ${y}</h3>
+  ${dayItems.map(i=>`<div class="row"><div>${esc(i.category)}<small>${esc(i.note||"")}</small></div>
+  <div><b class="${i.type==="income"?"inc":"exp"}">${i.type==="income"?"+":"−"}${money(Number(i.amount))}</b><button data-del="${i.id}" aria-label="Sil">✕</button></div></div>`).join("")||`<p class="empty">Bu güne kayıt yok.</p>`}
+  <div style="height:14px"></div>
+  <div class="seg"><button data-t="expense" class="${type==="expense"?"on":""}">Harcama</button><button data-t="income" class="${type==="income"?"on":""}">Kazanç</button></div>
+  <input id="amt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="Tutar (${CUR})">
+  <select id="cat">${CATS[type].map(c=>`<option>${c}</option>`).join("")}</select>
+  <input id="note" type="text" placeholder="Not (isteğe bağlı)">
+  <button class="save" id="sv">Kaydet</button>`;
+  $("#bg").classList.add("on");
+  document.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>openSheet(date,b.dataset.t));
+  document.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{
+    if(!confirm("Bu kayıt silinsin mi?"))return;
+    const {error}=await sb.from("transactions").delete().eq("id",b.dataset.del);
+    if(error)return alert(error.message);
+    await load();openSheet(date,type);
+  });
+  $("#sv").onclick=async()=>{
+    const amount=parseFloat($("#amt").value);
+    if(!(amount>0))return $("#amt").focus();
+    const {error}=await sb.from("transactions").insert({date,type,amount,category:$("#cat").value,note:$("#note").value.trim()});
+    if(error)return alert(error.message);
+    await load();openSheet(date,type);
+  };
+}
+$("#bg").onclick=e=>{if(e.target.id==="bg")$("#bg").classList.remove("on")};
+init();
+</script>
+</body>
+</html>
